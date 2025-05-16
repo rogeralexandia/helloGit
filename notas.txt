@@ -1,0 +1,34 @@
+pwd => direccion de carpeta 
+code . => ir a vsc deste la terminal
+git config list => Para ver la configuracion de git deste la terminal
+git config --global --list =>Configuracion global (usuario actual) es mas especifico
+git config --global  user.name""
+git config --global  user.email""
+git config --global  alias.(nombre del alias) "que es lo que quiero lanzar"
+**new-Item example.py => para crear nuevo archivo deste la terminal de git
+
+git init => inicializa git en mi directorio
+
+git status => para ver el estado de la rama
+git add => para añadir a git los ficheros que elijamos(git add . para añadir todos los ficheros).
+git commit -m "escribo el mensaje"=> guarda una version con uno hash unico
+
+git log => para ver los datos de los cambios de mi sistema con todos los datos
+git log --graph => para verlo como uu arbol
+git log --graph --decorate --all --oneline =>para verlo en una sola linea
+
+# antes de guardar 
+git checkout aqui va el archivo => 
+    *Habías hecho cambios en un archivo.
+    *Ejecutaste un comando para descartar esos cambios y volver al estado anterior (el que está en el "index", es decir, el área de preparación o staging).
+    *Git restauró ese archivo y te informa que actualizó 1 archivo ("1 path") desde el index.
+git restore <archivo> => descarta los cambios no guadados en el <archivo>
+git reset => 
+git switch main => para volver a una rama anterior
+
+
+git branch -m main => cambia el nombre de la rama de master a main
+git branch => ver mis ramas
+git branch -a => Mostrara las ramas locales y las ramas remotas
+git branch -r => Mostrara las ramas remotas
+git branch -d <rama> => borrar rama mal creada
