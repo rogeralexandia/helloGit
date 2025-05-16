@@ -5,7 +5,7 @@ git config --global --list =>Configuracion global (usuario actual) es mas especi
 git config --global  user.name""
 git config --global  user.email""
 git config --global  alias.(nombre del alias) "que es lo que quiero lanzar"
-**new-Item example.py => para crear nuevo archivo deste la terminal de git
+**New-Item example.py => para crear nuevo archivo deste la terminal de git
 
 git init => inicializa git en mi directorio
 
@@ -42,3 +42,23 @@ git branch => ver mis ramas
 git branch -a => Mostrara las ramas locales y las ramas remotas
 git branch -r => Mostrara las ramas remotas
 git branch -d <rama> => borrar rama mal creada
+
+
+## git tag => Un tag es como una etiqueta permanente en un commmit esprecifico. No se mueve como las ramas; siempre apunta al mismo commit.
+    * Es Basicamente un puntero directo a un commit, sin informacion extra.
+    * git tag v1.0
+    * git tag -a v1.0 -m "Version estable" =>Guarda información como autor, fecha, mensaje y firma opcional.
+    * git tag => ver todos los tag 
+    * git show v1.0 => ver detalles de un tag anotado.
+    # PARA SUBIR TAGS AL REPOSITORIO REMOTO:
+    * git push origin v1.0 => Para un solo tag.
+    * git push origin --tags => Para subir todos los tags. 
+    # CREAR UN TAG EN UN COMMIT ESPECÍFICO:
+    * git tag -a v1.1 abc123 -m "Version 1.1"
+    # ELIMINAR UN TAG 
+    * git tag -d v1.0
+    # EN REMOTO:
+    * git push origin --delete tag v1.0
+    # TAGS =! RAMAS:
+    * Tags no cambian. Son inmuables.
+    * Ramas se mueven con nuevos commits.
