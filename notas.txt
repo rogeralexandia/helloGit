@@ -19,11 +19,13 @@ git diff => Muestra las diferencias entre el directorio de trabajo y el área de
 git status => para ver el estado de la rama
 git add => para añadir a git los ficheros que elijamos(git add . para añadir todos los ficheros).
 git commit -m "escribo el mensaje"=> guarda una version con uno hash unico
-
-git log => para ver los datos de los cambios de mi sistema con todos los datos
-git reflog => para ver los log si hiciste git reset --hard
-git log --graph => para verlo como uu arbol
-git log --graph --decorate --all --oneline =>para verlo en una sola linea
+########### LOG ################
+    git log => para ver los datos de los cambios de mi sistema con todos los datos
+    # Para salir de log
+    * q => solo presiona la letra q.
+    git reflog => para ver los log si hiciste git reset --hard
+    git log --graph => para verlo como uu arbol
+    git log --graph --decorate --all --oneline =>para verlo en una sola linea
 
 # antes de guardar 
 git checkout aqui va el archivo => 
@@ -37,14 +39,10 @@ git reset --hard ade343534
 git switch main => para volver a una rama anterior
 
 
-git branch -m main => cambia el nombre de la rama de master a main
-git branch => ver mis ramas
-git branch -a => Mostrara las ramas locales y las ramas remotas
-git branch -r => Mostrara las ramas remotas
-git branch -d <rama> => borrar rama mal creada
 
 
-## git tag => Un tag es como una etiqueta permanente en un commmit esprecifico. No se mueve como las ramas; siempre apunta al mismo commit.
+############ TAGS ##################################
+    # Un tag es como una etiqueta permanente en un commmit esprecifico. No se mueve como las ramas; siempre apunta al mismo commit.
     * Es Basicamente un puntero directo a un commit, sin informacion extra.
     * git tag v1.0
     * git tag -a v1.0 -m "Version estable" =>Guarda información como autor, fecha, mensaje y firma opcional.
@@ -62,3 +60,17 @@ git branch -d <rama> => borrar rama mal creada
     # TAGS =! RAMAS:
     * Tags no cambian. Son inmuables.
     * Ramas se mueven con nuevos commits.
+    # PARA DESPLASARNOS ENTRE TAGS:
+    * git checkout tags/<nombre del tag>
+    # VOLVER A LA RAMA DONDE ESTABAMOS:
+    * git checkout <nombre de la rama>
+####### TRABAJAR CON RAMAS BRANCH ###########
+    git branch -m main => cambia el nombre de la rama de master a main
+    git branch => ver mis ramas
+    git branch -a => Mostrara las ramas locales y las ramas remotas
+    git branch -r => Mostrara las ramas remotas
+    git branch -d <rama> => borrar rama mal creada
+    # CREAR NUEVA RAMA:
+    * git branch <nombre de la nueva rama>
+    # MOVERSE A LA NUEVA RAMA CREADA:
+    * git switch <nombre de la nueva rama>
