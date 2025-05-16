@@ -27,16 +27,17 @@ git commit -m "escribo el mensaje"=> guarda una version con uno hash unico
     git log --graph => para verlo como uu arbol
     git log --graph --decorate --all --oneline =>para verlo en una sola linea
 
-# antes de guardar 
-git checkout aqui va el archivo => 
-    *Habías hecho cambios en un archivo.
-    *Ejecutaste un comando para descartar esos cambios y volver al estado anterior (el que está en el "index", es decir, el área de preparación o staging).
-    *Git restauró ese archivo y te informa que actualizó 1 archivo ("1 path") desde el index.
-git restore <archivo> => descarta los cambios no guadados en el <archivo>
-git reset => 
-git reset [modo] [objetivo]
-git reset --hard ade343534
-git switch main => para volver a una rama anterior
+###### CHECKOUT ############
+
+    *git checkout <aqui va el archivo> => 
+        *Habías hecho cambios en un archivo.
+        *Ejecutaste un comando para descartar esos cambios y volver al estado anterior (el que está en el "index", es decir, el área de preparación o staging).
+        *Git restauró ese archivo y te informa que actualizó 1 archivo ("1 path") desde el index.
+    *git restore <archivo> => descarta los cambios no guadados en el <archivo>
+    *git reset => 
+    *git reset [modo] [objetivo]
+    *git reset --hard ade343534
+    *git switch main => para volver a una rama anterior
 
 
 
@@ -78,4 +79,5 @@ git switch main => para volver a una rama anterior
     * git stash para dejar en el trabajo sin hacer commit 
     * git stash list para ver lo que deje sin hacer commit 
     * git stash pop para recuperar lo que tenia en stash
+    * git stash drop para eliminar un stash
     
