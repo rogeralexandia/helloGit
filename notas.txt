@@ -9,11 +9,19 @@ git config --global  alias.(nombre del alias) "que es lo que quiero lanzar"
 
 git init => inicializa git en mi directorio
 
+git diff => Muestra las diferencias entre el directorio de trabajo y el área de staging. Es decir, los cambios que hiciste pero aún no has preparado con git add.
+    *git status       # Ver archivos modificados
+    *git diff         # Ver los cambios aún no añadidos
+    *git add archivo.txt
+    *git diff --cached  # Ver lo que irá al commit
+    *git commit -m "mensaje"
+
 git status => para ver el estado de la rama
 git add => para añadir a git los ficheros que elijamos(git add . para añadir todos los ficheros).
 git commit -m "escribo el mensaje"=> guarda una version con uno hash unico
 
 git log => para ver los datos de los cambios de mi sistema con todos los datos
+git reflog => para ver los log si hiciste git reset --hard
 git log --graph => para verlo como uu arbol
 git log --graph --decorate --all --oneline =>para verlo en una sola linea
 
@@ -24,6 +32,8 @@ git checkout aqui va el archivo =>
     *Git restauró ese archivo y te informa que actualizó 1 archivo ("1 path") desde el index.
 git restore <archivo> => descarta los cambios no guadados en el <archivo>
 git reset => 
+git reset [modo] [objetivo]
+git reset --hard ade343534
 git switch main => para volver a una rama anterior
 
 
