@@ -74,3 +74,8 @@ git switch main => para volver a una rama anterior
     * git branch <nombre de la nueva rama>
     # MOVERSE A LA NUEVA RAMA CREADA:
     * git switch <nombre de la nueva rama>
+#### STASH ###
+    * git stash para dejar en el trabajo sin hacer commit 
+    * git stash list para ver lo que deje sin hacer commit 
+    * git stash pop para recuperar lo que tenia en stash
+    
